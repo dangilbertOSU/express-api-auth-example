@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "11915845-1490-4b24-8839-a069527373a6",
 		"name": "Auth API Tests",
-		"description": "A simple API for a Yelp-like application.",
+		"description": "A simple API authentication.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -28,12 +28,8 @@
 						},
 						"url": {
 							"raw": "{{baseUrl}}/users",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"users"
-							]
+							"host": ["{{baseUrl}}"],
+							"path": ["users"]
 						}
 					},
 					"response": []
@@ -54,13 +50,8 @@
 						},
 						"url": {
 							"raw": "{{baseUrl}}/users/login",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"users",
-								"login"
-							]
+							"host": ["{{baseUrl}}"],
+							"path": ["users", "login"]
 						}
 					},
 					"response": []
@@ -82,13 +73,8 @@
 						"header": [],
 						"url": {
 							"raw": "{{baseUrl}}/users/:userid",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"users",
-								":userid"
-							],
+							"host": ["{{baseUrl}}"],
+							"path": ["users", ":userid"],
 							"variable": [
 								{
 									"key": "userid",
@@ -108,18 +94,14 @@
 			"listen": "prerequest",
 			"script": {
 				"type": "text/javascript",
-				"exec": [
-					""
-				]
+				"exec": [""]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
 				"type": "text/javascript",
-				"exec": [
-					""
-				]
+				"exec": [""]
 			}
 		}
 	]
